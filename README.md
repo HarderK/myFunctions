@@ -1,1 +1,2 @@
-# myFunctions
+# 一些实用函数
+1. [bind()]()
