@@ -9,8 +9,8 @@ var curry = function(fn) {
 	return function func() {
 		if(arguments.length === 0) {		// 如果不传入参数
 			return fn.apply(this, args);	// 执行fn
-		} else {		// 传入参数则不执行fn，将参数加入args中
-			Array.prototype.push.apply(args, arguments);
+		} else {		// 传入参数则不执行fn
+			Array.prototype.push.apply(args, arguments);		// 将参数加入args中
 			return func;	//链式调用
 		}
 	};
