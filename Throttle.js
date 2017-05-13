@@ -15,7 +15,7 @@ var throttle = function(fn, interval) {
 			return;		// 什么都不做
 		}
 
-		// 设置timer，延迟一段事件执行
+		// 设置timer，延迟一段时间执行
 		timer = setTimeout(function() {
 			clearTimeout(timer);		// 考虑到如果执行队列过长，上一次的调用还没有执行，则取消上一次的调用，直接执行本次调用
 			timer = null;		// 将timer置为null，标识该次调用已经执行
